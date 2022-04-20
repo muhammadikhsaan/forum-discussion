@@ -1,0 +1,202 @@
+*{
+        padding: 0;
+        margin: 0;
+    }
+
+    html {
+        font-size: 12px;
+    }
+    
+    header {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        color: white;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        padding: 0 64px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    header .content-header {
+        display: flex;
+        flex-grow: 1;
+    }
+
+    header a {
+        font-size: 1.5rem;
+        color: white;
+        text-decoration: none;
+    }
+
+    header .logo-header {
+        font-size: 2rem;
+        width: 240px;
+    }
+
+    header .navigation-header {
+        display: flex;
+        gap: 20px;
+        flex-grow: 1;
+    }
+
+    header .action-header {
+        display: flex;
+        gap: 20px;
+        width: 240px;
+    }
+
+    section {
+        width: 100%;
+        height: 640px;
+        background-color: rgb(124, 124, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    section h1 {
+        font-size: 48px;
+    }
+
+    main {
+        padding: 20px;
+        background-color: lightgreen;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 10px;
+        row-gap: 5px;
+        justify-content: center;
+    }
+
+    main div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        height: 320px;
+        background-color: aqua;
+        border: 2px solid black;
+        font-size: 3rem;
+    }
+
+    footer {
+        padding: 60px 20px 0 20px;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: black;
+        color: white;
+    }
+
+    footer a {
+        color: white;
+        text-decoration: none;
+    }
+
+    footer .logo-footer {
+        font-size: 2rem;
+        width: 120px;
+        text-align: center;
+    }
+
+    footer .navigation-footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+        font-size: 1.2rem;
+        flex-grow: 1;
+    }
+
+    footer .information-footer {
+        font-size: 1.2rem;
+        flex-grow: 1;
+        text-align: center;
+    }
+    
+    footer .copyright-footer {
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 768px) {
+        html {
+            font-size: 10px;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0);
+            position: sticky;
+            flex-wrap: wrap;
+        }
+
+        header .logo-header {
+            width: 100%;
+        }
+
+        header:hover .content-header {
+            display: inline-block;
+        }
+
+        header .content-header {
+            display: none;
+            position: absolute;
+            top: 64px;
+            left: 0;
+            padding: 20px;
+            background-color: rgba(0, 0, 0);
+            flex-direction: column;
+        }
+
+        header .navigation-header {
+            flex-direction: column;
+        }
+
+        header .action-header {
+            margin-top: 20px;
+        }
+
+        header .action-header a {
+            width: 50%;
+            text-align: center;
+        }
+
+        section {
+            display: none;
+        }
+
+        main div {
+            width: 40%;
+        }
+
+        footer {
+            gap: 20px;
+        }
+
+        footer .logo-footer {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        footer .navigation-footer {
+            width: 100%;
+        }
+
+        footer .information-footer {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 425px) {
+        html {
+            font-size: 8px;
+        }
+
+        main div {
+            width: 100%;
+        }
+    }
