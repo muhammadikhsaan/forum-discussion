@@ -118,7 +118,6 @@ function funcsum(total, value) {
 }
 max = maxArr.reduce(funcsum);
 
-
 const minArr = [...data];
 minArr.pop();
 
