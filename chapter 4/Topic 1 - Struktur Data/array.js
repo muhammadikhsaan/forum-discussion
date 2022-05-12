@@ -11,15 +11,6 @@ for(var index = 0; index < arr.length; index = index + 1){ //index =1
     });
 }
 
-const user = ["batu", "gunting", "kertas"]; // 1
-
-const r = Math.random() * 3;
-
-const com = ["batu", "gunting", "kertas"];
-
-document.getElementById("hal").innerHTML = arr;
-document.getElementsByClassName("header")
-
 // arr.push(10);
 
 // // console.log(arr);
