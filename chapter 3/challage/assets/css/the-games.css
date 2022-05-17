@@ -1,0 +1,34 @@
+.the-games {
+    margin-top: -10px;
+    width: 100%;
+    height: 1000px;
+    background-image: url("../images/the-games-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.the-games-description {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 0 20px;
+    height: 55%;
+    color: white;
+    padding-left: 64px;
+}
+
+.the-games-description h5 {
+    font-size: 1rem;
+}
+
+.the-games-description h2 {
+    font-size: 3rem;
+}
+
+.the-games-slide-show {
+    width: 70%;
+    padding-right: 120px;
+}
