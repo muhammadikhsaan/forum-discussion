@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .el {
+        display: block;
+    }
+</style>
+<body>
+    <div id="parent"></div>
+</body>
+<script type="text/javascript">
+    var el = document.createElement("h1");
+    el.textContent = "Ini Element H1";
+    el.id = "element-h1";
+
+    var parent = document.getElementById("parent");
+    parent.append(el);
+
+    var element = document.getElementById("element-h1");
+    element.style.display = "none";
+</script>
+</html>

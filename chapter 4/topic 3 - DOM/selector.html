@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .warnaUngu {
+        color: purple;
+    }
+</style>
+<body>
+    <h1>Hallo</h1>
+    <h1>Ini demo</h1>
+
+    <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit aliquam provident ducimus atque nemo? Nobis minima, eaque ab doloremque quo iure reiciendis eligendi, cumque praesentium eveniet hic natus veniam ipsam.</p>
+    <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit aliquam provident ducimus atque
+        nemo? Nobis
+        minima, eaque ab doloremque quo iure reiciendis eligendi, cumque praesentium eveniet hic natus veniam ipsam.</p>
+    
+    <div id="inner" class="test">Inner Element</div>
+
+    <section class="uji">
+        <span>Ini Section</span>
+        <span>Ini Section</span>
+    </section>
+
+    <div>
+        <span></span>
+    </div>
+
+    <select name="select-1" id=""></select>
+    <input type="text" name="select-1">
+    <textarea name="select-1" id="" cols="30" rows="10"></textarea>
+
+    <script type="text/javascript">
+        var tagName = document.getElementsByTagName("h1");
+
+        for (let index = 0; index < tagName.length; index++) {
+            tagName[index].style.color = "red";
+            tagName[index].style.fontSize = `${4 * index + 24}px`;
+        }
+
+        var className = document.getElementsByClassName("paragraf");
+        className[0].style.color = "blue";
+        className[1].style.color = "green";
+
+        var idName = document.getElementById("inner");
+        // idName.setAttribute("class", "warnaUngu");
+        idName.classList.add("warnaUngu");
+        idName.classList.remove("test");
+
+        var queryselector = document.querySelectorAll("section.uji > span");
+
+        var byName = document.getElementsByName("select-1");
+    </script>
+</body>
+</html>

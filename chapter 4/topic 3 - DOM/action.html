@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="action">Ini halaman action</h1>
+
+    <button onclick="handleClick('red', 0)">merah</button>
+    <button onclick="handleClick('blue', 1)">biru</button>
+    <button onclick="handleClick('green', 2)">hijau</button>
+</body>
+<script type="text/javascript">
+    var el = document.getElementById("action");
+
+    // el.addEventListener("click", function() {
+    //     el.style.color = "red";
+    // });
+
+    function handleClick(color, angka) {
+        const btn = document.getElementsByTagName("button");
+
+        for (let index = 0; index < btn.length; index++) {
+            if (index !== angka) {
+                btn[index].disabled = true;
+            }
+        }
+        
+        el.style.color = color;
+    }
+</script>
+</html>
