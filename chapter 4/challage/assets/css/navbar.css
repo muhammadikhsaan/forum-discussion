@@ -1,0 +1,29 @@
+.navbar-header {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    position: fixed;
+    width: 100%;
+    padding: 12px 120px;
+    z-index: 10;
+}
+
+.navbar-header a {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.navbar-header .navbar-brand {
+    text-align: center;
+    padding: 0 64px;
+    font-size: 1.5rem;
+}
+
+.navbar-header .navbar-nav {
+    flex-grow: 1;
+}
+
+.navbar-header .user-action {
+    display: flex;
+    justify-content: flex-end;
+}

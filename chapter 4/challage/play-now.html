@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: #9C835F;
+    }
+    header {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        color: #F9B23D;
+        font-size: 20px;
+    }
+    main {
+        display: flex;
+    }
+
+    .player-choice > .choice {
+        
+    }
+
+    .player-choice,
+    .com-choice {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .player-choice
+    .choice {
+        cursor: pointer;
+    }
+
+    .vs-text {
+        font-size: 144px;
+        font-weight: 900;
+        display: flex;
+        align-items: center;
+        color: #BD0000;
+    }
+    footer {
+        text-align: center;
+    }
+
+    footer img {
+        cursor: pointer;
+    }
+</style>
+<body>
+    <header>
+        <a href="./index.html"><img width="34" src="./assets/images/back.svg" alt="back"></a>
+        <img width="52" src="./assets/images/icon.svg" alt="icon">
+        <h4>ROCK PAPER SCISSORS</h4>
+    </header>
+    <main>
+        <div class="player-choice">
+            <div><h2>Player 1</h2></div>
+            <div class="choice">
+                <img width="128" onclick="suit(this, 0)" src="./assets/images/batu.png" alt="batu">
+            </div>
+            <div class="choice">
+                <img width="128" onclick="suit(this, 1)" src="./assets/images/kertas.png" alt="kertas">
+            </div>
+            <div class="choice">
+                <img width="128" onclick="suit(this, 2)" src="./assets/images/gunting.png" alt="gunting">
+            </div>
+        </div>
+        <div class="vs-text">
+            VS
+        </div>
+        <div class="com-choice">
+            <div>
+                <h2>Com</h2>
+            </div>
+            <div class="choice">
+                <img width="128" src="./assets/images/batu.png" alt="batu">
+            </div>
+            <div class="choice">
+                <img width="128" src="./assets/images/kertas.png" alt="kertas">
+            </div>
+            <div class="choice">
+                <img width="128" src="./assets/images/gunting.png" alt="gunting">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img width="77" onclick="reset()" src="./assets/images/refresh.png" alt="refresh">
+    </footer>
+</body>
+<script type="text/javascript" src="./assets/js/suit.js"></script>
+</html>

@@ -1,0 +1,77 @@
+.feature {
+    background-image: url("../images/features.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    position: relative;
+}
+
+.feature .feature-content-wrapper {
+    position: absolute;
+    color: white;
+    top: 250px;
+    right: 350px;
+    width: 350px;
+}
+
+.feature .feature-content-title {
+    margin-bottom: 130px;
+}
+
+.feature .feature-content-title h5 {
+    font-weight: 200;
+}
+
+.feature .feature-content-description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.feature .feature-content-description .traditional-game,
+.feature .feature-content-description .game-suit,
+.feature .feature-content-description .tdb{
+    display: flex;
+    justify-items: flex-start;
+    gap: 20px;
+}
+
+.feature .feature-content-description span {
+    font-size: 1.4rem;
+}
+
+.feature .feature-content-description .traditional-game .description-indicator {
+    background-color: white;
+    position: relative;
+}
+
+.feature .feature-content-description .traditional-game .description-indicator::after {
+    content: "";
+    width: 2px;
+    height: 122px;
+    background-color: white;
+    position: absolute;
+    top: 6px;
+    left: 4.5px;
+}
+
+.feature .feature-content-description .traditional-game span {
+    color: orange;
+}
+
+.feature .feature-content-description .traditional-game p {
+    font-size: 1.1rem;
+    text-align: justify;
+    height: 60px;
+}
+
+.feature .description-indicator {
+    border-radius: 9999px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    flex-grow: 0;
+    margin-top: 15px;
+    width: 15px;
+    height: 15px;
+    border: 2px solid white;
+}
