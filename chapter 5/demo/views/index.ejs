@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/index.css" type="text/css">
+</head>
+<body>
+    <a class="app-btn-app" href="/add">Add Data</a>
+    <form action="/" method="get">
+        <input type="text" name="search">
+        <input type="submit" value="search">
+    </form>
+    <div class="app-parent">
+        <% for(let i = 0; i < items.length; i++) { %>
+            <div onclick="onItemsClick(<%= items[i].id %>)">
+                <div><%= items[i].title %></div>
+                <div><%= items[i].description %></div>
+                <div class="app-btn-action">
+                    <button onclick="onEditClick(event, <%= items[i].id %>)">Edit</button>
+                    <form action="/<%= items[i].id %>" method="post">
+                        <button type="submit">Delete</button>
+                    </form>
+                </div>
+            </div>
+        <% } %>
+    </div>
+    <div>
+        <form action="/" method="get">
+            <% for(let i = 0; i <= Math.ceil(items.length/4); i++) { %>
+                <input type="submit" name="page" value="<%= i+1 %>">
+            <% } %>
+        </form>
+    </div>
+</body>
+<script>
+    function onItemsClick(id) {
+        window.location.href = `/${id}`;
+    }
+    
+    function onEditClick(e, id){
+        e.stopPropagation();
+        window.location.href = `/${id}/edit`;
+    }
+</script>
+</html>
